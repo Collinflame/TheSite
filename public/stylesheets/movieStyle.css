@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #1D4D7A;
+  font: 14px "Bodoni MT", Helvetica, Arial, sans-serif;
+}
+
+.topNav {
+  background-color: #8FB3C7;
+  border-bottom: 5px solid black;
+}
+
+.navContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 48px;
+  width: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: 16px;
+  border-right: 5px solid black;
+  padding-right: 16px;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.link a:not(:last-child){
+  border-right: 5px solid black;
+  padding-right: 8px;
+}

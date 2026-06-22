@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title TheSite
+        link(rel='stylesheet' href='/stylesheets/movieStyle.css')
+    body
+        nav(class="topNav")
+            div.navContainer
+                a.logo TheSite
+                div.menu
+                    a.link(href="/movies/movieHome") Home
+                    a.link(href="#") Ranking Every Movie
+                    a.link(href="#") Franchise Rankings
+                    a.link(href="#") Additional Rankings
+        block content
