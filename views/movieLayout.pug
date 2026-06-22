@@ -4,12 +4,26 @@ html
         title TheSite
         link(rel='stylesheet' href='/stylesheets/movieStyle.css')
     body
-        nav(class="topNav")
+        nav.topNav
             div.navContainer
                 a.logo TheSite
-                div.menu
+                div.pages
                     a.link(href="/movies/movieHome") Home
                     a.link(href="#") Ranking Every Movie
                     a.link(href="#") Franchise Rankings
                     a.link(href="#") Additional Rankings
+        nav.sideNav
+            div.sideNavContainer
+                a.iconContainer(href="/movies/movieHome")
+                    img(src="../images/movieIcon.png" alt="Movie Section")
+                a.iconContainer(href="#")
+                    img(src="../images/showIcon.png" alt="TV Show Section")
+                a.iconContainer(href="#")
+                    img(src="../images/gameIcon.png" alt="Video Game Section")
+                a.iconContainer(href="#")
+                    img(src="../images/musicIcon.png" alt="Music Section")
+                a.iconContainer(href="#")
+                    img(src="../images/bookIcon.png" alt="Book Section")
+                a.iconContainer(href="#")
+                    img(src="../images/comicIcon.png" alt="Comic Book Section")
         block content

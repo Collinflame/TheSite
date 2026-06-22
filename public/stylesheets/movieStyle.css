@@ -30,7 +30,7 @@ body {
   height: 100%;
 }
 
-.menu {
+.pages {
   display: flex;
   justify-content: space-around;
   flex-grow: 1;
@@ -44,7 +44,32 @@ body {
   transition: color 0.2s ease;
 }
 
-.link a:not(:last-child){
-  border-right: 5px solid black;
-  padding-right: 8px;
+.iconContainer {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0 8px 0;
+}
+
+.iconContainer img {
+  height: 70%;
+  width: 70%;
+}
+
+.sideNav {
+  width: 185.67px;
+}
+
+.sideNavContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 636px;
+  overflow: hidden;
 }
