@@ -1,3 +1,4 @@
+/* Background */
 body {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@ body {
   font: 14px "Bodoni MT", Helvetica, Arial, sans-serif;
 }
 
+/* Layout */
 .topNav {
   background-color: #8FB3C7;
   border-bottom: 5px solid black;
@@ -64,12 +66,40 @@ body {
 
 .sideNav {
   width: 185.67px;
+  overflow: hidden;
 }
 
 .sideNavContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 636px;
-  overflow: hidden;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.sideNavContainer.active {
+  transform: translateY(0);
+}
+
+.contentContainer {
+  position: absolute;
+  top: 65px;
+  left: 185.67px;
+  width: calc(100vw - 185.67px);
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Home */
+
+.homeSection {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 25px 0;
+}
+
+.homeSection.topSection{
+  margin-top: -12px;
 }

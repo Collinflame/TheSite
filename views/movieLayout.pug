@@ -27,3 +27,10 @@ html
                 a.iconContainer(href="#")
                     img(src="../images/comicIcon.png" alt="Comic Book Section")
         block content
+        script.
+            const logo = document.querySelector(".logo");
+            const sideNav = document.querySelector(".sideNavContainer");
+            logo.style.cursor = 'pointer';
+            logo.addEventListener("click", function() {
+                sideNav.classList.toggle('active');
+            })
