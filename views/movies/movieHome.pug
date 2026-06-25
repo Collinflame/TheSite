@@ -3,8 +3,24 @@ extends ../movieLayout
 block content
     div.contentContainer
         div.homeSection.topSection
-            h1(style="text-decoration: underline") Recently Watched
+            h1(style="font-size: 42px; text-decoration: underline") Recently Watched
+            div.posterContainer
+                img(src=`${recentThree[2].poster}`).homePoster
+                img(src=`${recentThree[1].poster}`).homePoster
+                img(src=`${recentThree[0].poster}`).homePoster
         div.homeSection
-            h1(style="text-decoration: underline") The Elites
+            h1(style="font-size: 42px; text-decoration: underline") The Elites
+            div.posterContainer
+                img(src=`${recentThree[2].poster}`).homePoster
+                img(src=`${recentThree[1].poster}`).homePoster
+                img(src=`${recentThree[0].poster}`).homePoster
+            div.titleContainer
+                h1 Latest 10
+                h1 Best of June
+                h1 Best of 2026
         div.homeSection
-            h1(style="text-decoration: underline") The Duds
+            h1(style="font-size: 42px; text-decoration: underline") The Duds
+            div.posterContainer
+                img(src=`${recentThree[2].poster}`).homePoster
+                img(src=`${recentThree[1].poster}`).homePoster
+                img(src=`${recentThree[0].poster}`).homePoster

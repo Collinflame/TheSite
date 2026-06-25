@@ -2,5 +2,7 @@ const {Movie, Recentmovie} = require('../models');
 const express = require("express");
 
 module.exports.movieHome = async function (req, res){
-    res.render('movies/movieHome')
+    const recentMovies = await Recentmovie.findAll();
+    let recentThree = recentMovies.slice(-3);
+    res.render('movies/movieHome', {recentThree});
 }
